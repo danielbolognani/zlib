@@ -8,12 +8,12 @@ CONFIG += static
 
 win*{
   DEFINES += WIN32
-    INCLUDEPATH += ../zlib/win32/include
+    INCLUDEPATH += ../../
     contains (QMAKE_TARGET.arch, x86_64){
-      OUTPATH = ./win32
+      OUTPATH = ./win64
     }
   else{
-    OUTPATH = ./win64
+    OUTPATH = ./win32
   }
 }
 else {
